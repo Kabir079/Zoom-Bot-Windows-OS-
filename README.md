@@ -38,7 +38,7 @@ If error comes then , accordingly change the path of the images .
 ### Note : For CSV file ### ❕❕
 * Update the timings.csv with the time of the "time of the meeting" (24 hr format) , Meeting Id and password.
 * Do not add any additional spaces.(Do not open the csv using excel as it changes the formatting)
-* The links must be feeded in the ascending order in respect of time .
+* The links must be feeded in the "ascending order" in respect of time .
 # Example : #
 
 ![](readme.md_images/two.png)
@@ -52,6 +52,13 @@ This bot is only specifically made for Window OS . But if changes are made in "S
 (provided there are no errors in the changes which were made)
 
 # Working 🏃‍♂️ 🚀
-* Copy the links and in a notepad and then copy the "Meeting ID" written within each link and paste those respective "Meeting Id's" in the csv file of this project . 
-* Check if the time.sleep() in "78","83","88","93" is equal to that of the interval/difference between the links which you have provided in the csv file.
-* Go ahead and run the code and Enjoy LAZYNESSSS😂😂
+1. Extract the Meeting Id from Meeting link of the class which you target to attend and paste it in the CSV file .Also mention the timing (Do not change the format of CSV file which is Time,Meeting ID,--1st class
+2. Check if the time.sleep() in "78","83","88","93" is equal to that of the interval/difference between the links which you have provided in the csv file.
+3. Go ahead and run the code and Enjoy LAZYNESSSS😂😂
+
+# Things to "NOT TO DO" , when bot is working 
+* When the bot open Zoom app , do not move your cursor . The bot is programmed to perform some actions using Cursor . So , when Zoom app open , leave your computer/laptop/system until you are logged in .
+* This Bot is not programmed to End/Leave the meeting/class, though the user if wants that functionallity too , he/she can add that function too by making changes according .
+ I haven't programmed the BOT to End/Leave the meeting/class because mostly people would like to manually End/Leave  which is dictated by that person's mood .
+* The user must make sure that after logging out of the Meeting/Class , he/she should check if Zoom app is running in background . If it is running , the user must close it properly , before the next meeting/class time .
+

@@ -1,0 +1,19 @@
+import csv
+
+def helper(helperlist):
+    return[i[0][24:35] for i in helperlist]
+
+# Reading the CSV file
+with open("helping.csv", newline='') as csvfile:
+    column1 = csv.reader(csvfile,delimiter=',')
+    helperlist = []
+    for i in column1:
+        helperlist.append(i)
+
+d = helper(helperlist)
+print(d)
+
+print("09:00,",'\b',d[0],'," - 1st class"')
+print("10:00,",'\b',d[1],'," - 2nd class"')
+print("11:00,",'\b',d[2],'," - 3rd class"')
+print("02:00,",'\b',d[3],'," - 4th class"')

@@ -10,39 +10,37 @@ def sign_in(meetingid):
     time.sleep(2)
 
     #Clicks the INITIAL-JOIN button
-    join_btn = pyautogui.locateCenterOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo1.png')
+    join_btn = pyautogui.locateCenterOnScreen('photo103.png')
     pyautogui.moveTo(join_btn)
     pyautogui.click()
 
     # Type the Meeting ID button
-    meeting_id_btn = pyautogui.locateCenterOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo2.png')
+    meeting_id_btn = pyautogui.locateCenterOnScreen('photo2.png')
     pyautogui.moveTo(meeting_id_btn)
     pyautogui.write(meetingid)
 
     # Disabling both the camera and the mic
-    media_btn = pyautogui.locateAllOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo3.png')
+    media_btn = pyautogui.locateAllOnScreen('photo3.png')
     for a in media_btn:
         pyautogui.moveTo(a)
         pyautogui.click()
         time.sleep(1)
 
     # Clicking the FIRST-JOIN button
-    join_btn = pyautogui.locateCenterOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo4.png')
+    join_btn = pyautogui.locateCenterOnScreen('photo4.png')
     pyautogui.moveTo(join_btn)
     pyautogui.click()
 
     # Writes the password for the meeting
-    join_btn = pyautogui.locateCenterOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo100.png')
+    join_btn = pyautogui.locateCenterOnScreen('photo100.png')
     pyautogui.moveTo(join_btn)
     pyautogui.write("gitam123")
 
     # Clicking the FINAL-JOIN button
-    join_btn = pyautogui.locateCenterOnScreen(r'C:\Users\Lenovo\Desktop\Zoom bot\photo102.png')
+    join_btn = pyautogui.locateCenterOnScreen('photo102.png')
     pyautogui.moveTo(join_btn)
     pyautogui.click()
 
-
-now = datetime.now().strftime("%H:%M")
 
 def extract(addinglist):
     return [item[0] for item in addinglist]
@@ -97,17 +95,3 @@ while True :
     else:
         print("Not yet")
         time.sleep(5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

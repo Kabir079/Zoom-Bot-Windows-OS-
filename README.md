@@ -50,7 +50,10 @@ This bot is only specifically made for Window OS . But if changes are made in "S
 # Helper code 
 Description : This code is made to ease the task , comfort the user and save time in writting the Meeting link with time (in ascending order) in the Zoom bot's csv file . Usually when such a proper syntax is needed in csv files , people usually make mistakes with giving extra commas or extra spaces . Therfore , I build this "Helper code" which assists the Zoom bot .
 1. To use this , the user shall open the folder "helper_folder" present in this repo and then he/she shall create a new project/file where the code and the csv must be included .
-2. Csv file is where the user must paste the links of the class , just like give below .
+2. Csv file is where the user must paste the links of the class , just like the below link.
+
+![](readme.md_images/three.png)
+
 3. Now , run the code . 
 4. The result of the code is what the user can copy paste in the zoom bot's csv file and can run bot in no time .
 
